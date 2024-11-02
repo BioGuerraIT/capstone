@@ -7,7 +7,7 @@ import * as ImageManipulator from 'expo-image-manipulator';
 import { Video, ResizeMode } from 'expo-av';
 import { ViroARSceneNavigator, ViroARScene, ViroVideo, ViroImage } from 'react-viro';
 
-const apiKey = '9aadd674-cf96-4fd1-9c28-b21f21f72b62';
+const apiKey = '';
 const baseUrl = 'https://api.novita.ai';
 
 const sendImageToApi = async (imageUri: string, setLoading: (loading: boolean) => void, setTaskId: (id: string | null) => void) => {
