@@ -1,0 +1,53 @@
+[project]
+name = "novita_client"
+version = "0.6.1"
+description = "Novita AI Python SDK"
+authors = [
+    { name = "Novita AI", email = "novitalabs@gmail.com" }
+]
+
+dependencies = [
+    "dataclass_wizard>=0.22.2",
+    "requests>=2.27.1",
+    "pillow>=10.2.0",
+]
+
+license = { file = "LICENSE" }
+
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+
+readme = "README.md"
+requires-python = ">= 3.6"
+
+[project.urls]
+"Homepage" = "https://github.com/novita/python-sdk"
+"Bug Tracker" = "https://discord.gg/nzqq8UScpx"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+dev-dependencies = [
+    "pytest>=7.0.1",
+    "pytest-dependency>=0.5.1",
+    "build>=1.1.1",
+    "twine>=5.0.0",
+    "pillow>=8.4.0",
+    "omegaconf>=2.3.0",
+    "jupyterlab>=3.2.9",
+    "pkginfo>=1.10.0",
+]
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.pytest.ini_options]
+markers = [
+    "dependency: mark a test as dependency for other tests",
+]
